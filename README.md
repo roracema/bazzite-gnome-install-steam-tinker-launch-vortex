@@ -59,3 +59,21 @@ steamtinkerlaunch vortex start --game <game_id>
 
 Note: Replace <game_id> with the numerical Steam ID of the game you want to manage.
 Enjoy!
+
+
+Adding collections
+1. Create a desktop application on applications
+2. run:
+   echo "[Desktop Entry]
+Name=Vortex Mod Manager
+Comment=Launches Vortex through SteamTinkerLaunch
+Exec=steamtinkerlaunch vortex start
+Icon=vortex
+Terminal=true
+Type=Application
+Categories=Game;Utility;
+" > ~/.local/share/applications/Vortex-SteamTinkerLaunch.desktop && \
+chmod +x ~/.local/share/applications/Vortex-SteamTinkerLaunch.desktop && \
+update-desktop-database ~/.local/share/applications
+
+NOTE: Dont run via the desktop app, only via command line
