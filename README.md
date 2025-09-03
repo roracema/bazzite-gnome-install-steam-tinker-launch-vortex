@@ -76,6 +76,26 @@ Categories=Game;Utility;
 chmod +x ~/.local/share/applications/Vortex-SteamTinkerLaunch.desktop && \
 update-desktop-database ~/.local/share/applications
 
-NOTE: Dont run via the desktop app, only via command line
+NOTEs: 
 
-If you have issues of access of the files access, change the Z:/ folder to the Z:/home/<user>/
+1. Dont run via the desktop app, only via command line
+
+2. If you have issues of access of the files access, change the Z:/ folder to the Z:/home/<user>/
+
+
+3. Deployment issues:
+
+If you are still having issues for deploying the mods create a new folder on:
+/home/<USER>/.steam/steam/steamapps/compatdata/<GAME_ID>/pfx/drive_c/users/steamuser/Application Data
+the new folder should be: mods
+/home/<USER>/.steam/steam/steamapps/compatdata/<GAME_ID>/pfx/drive_c/users/steamuser/Application Data/mods
+
+then create a sys link to your vortex game staging installation:
+/home/<USER>/.config/steamtinkerlaunch/vortex/staging/<game>/
+the sys link should be like this
+/home/<USER>/.config/steamtinkerlaunch/vortex/staging/<game>/mods
+
+Ensure that on the first installation the mods folder is empty
+
+re-install the mods and run the deployments afterwards
+
