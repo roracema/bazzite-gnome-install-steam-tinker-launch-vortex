@@ -77,3 +77,5 @@ chmod +x ~/.local/share/applications/Vortex-SteamTinkerLaunch.desktop && \
 update-desktop-database ~/.local/share/applications
 
 NOTE: Dont run via the desktop app, only via command line
+
+If you have issues of access of the files access, change the Z:/ folder to the Z:/home/<user>/
